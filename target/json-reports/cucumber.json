@@ -1,0 +1,71 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 366400,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "user should be able to choose a category from ALL menu and see the subcategories.",
+        "description": "",
+        "id": "user-should-be-able-to-choose-a-category-from-all-menu-and-see-the-subcategories.;user-should-be-able-to-choose-a-category-from-all-menu-and-see-the-subcategories.",
+        "after": [
+          {
+            "result": {
+              "duration": 6400,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 31200,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "user goes to amazon page",
+            "match": {
+              "location": "StepDef1.user_goes_to_amazon_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "clicks ALL button",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TC_0301"
+          }
+        ]
+      }
+    ],
+    "name": "user should be able to choose a category from ALL menu and see the subcategories.",
+    "description": "",
+    "id": "user-should-be-able-to-choose-a-category-from-all-menu-and-see-the-subcategories.",
+    "keyword": "Feature",
+    "uri": "src\\test\\resources\\features\\US_03.feature",
+    "tags": []
+  }
+]

@@ -22,7 +22,7 @@ import java.util.function.Function;
 public class Driver {
 
     private Driver(){
-
+        // We made default constructor private so that other classes cannot create objects from this class.
     }
 
     static WebDriver driver;

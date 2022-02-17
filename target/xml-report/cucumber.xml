@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="1" tests="1" time="0.002858">
+    <testcase classname="user should be able to choose a category from ALL menu and see the subcategories." name="user should be able to choose a category from ALL menu and see the subcategories." time="0.002858">
+        <skipped>
+            <![CDATA[Given user goes to amazon page..............................................skipped
+Then clicks ALL button......................................................undefined
+]]>
+        </skipped>
+    </testcase>
+</testsuite>

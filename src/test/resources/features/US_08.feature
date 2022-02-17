@@ -1,0 +1,1 @@
+Feature: user should be able to create and delete a shopping list.

@@ -1,0 +1,1 @@
+Feature: user should be able to access the correct pages from the links bottom of the page
