@@ -1,11 +1,10 @@
-package stepdefinitions;
+package ui.stepdefinitions;
 
 import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
 import org.junit.Assert;
-import pages.AmazonPage;
-import utilities.ConfigurationReader;
-import utilities.Driver;
+import ui.pages.AmazonPage;
+import ui.utilities.ConfigurationReader;
+import ui.utilities.Driver;
 
 public class StepDef1 {
 

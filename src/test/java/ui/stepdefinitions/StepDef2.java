@@ -1,4 +1,4 @@
-package stepdefinitions;
+package ui.stepdefinitions;
 
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
@@ -6,8 +6,8 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
-import pages.AmazonPage;
-import utilities.Driver;
+import ui.pages.AmazonPage;
+import ui.utilities.Driver;
 
 public class StepDef2 {
 

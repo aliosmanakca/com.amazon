@@ -1,4 +1,4 @@
-package utilities;
+package ui.utilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.Assert;
@@ -21,7 +21,7 @@ import java.util.function.Function;
 
 public class Driver {
 
-    private Driver(){
+    private Driver(){ // singleton class
         // We made default constructor private so that other classes cannot create objects from this class.
     }
 

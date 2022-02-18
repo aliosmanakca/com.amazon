@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="1" tests="1" time="0.002858">
-    <testcase classname="user should be able to choose a category from ALL menu and see the subcategories." name="user should be able to choose a category from ALL menu and see the subcategories." time="0.002858">
-        <skipped>
-            <![CDATA[Given user goes to amazon page..............................................skipped
-Then clicks ALL button......................................................undefined
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="11.343799">
+    <testcase classname="when the user searches for a keyword, results must contain the keyword" name="when the user searches for a keyword, results must contain the keyword" time="8.366079">
+        <system-out>
+            <![CDATA[Given user goes to amazon page..............................................passed
+Then searches a keyword "java"..............................................passed
+And results contain "java"..................................................passed
 ]]>
-        </skipped>
+        </system-out>
+    </testcase>
+    <testcase classname="when the user searches for a keyword, results must contain the keyword" name="when the user searches for a keyword, results must contain the keyword 2" time="2.97772">
+        <system-out>
+            <![CDATA[Given user goes to amazon page..............................................passed
+Then searches a keyword "apple".............................................passed
+And results contain "apple".................................................passed
+]]>
+        </system-out>
     </testcase>
 </testsuite>

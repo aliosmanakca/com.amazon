@@ -1,12 +1,9 @@
-package pages;
+package ui.pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import utilities.Driver;
-
-import java.util.ArrayList;
-import java.util.List;
+import ui.utilities.Driver;
 
 public class AmazonPage {
 
@@ -23,5 +20,7 @@ public class AmazonPage {
     @FindBy(css = "#nav-hamburger-menu")
     public WebElement allButton;
 
+    @FindBy(css = "#twotabsearchtextbox")
+    public WebElement searchBox;
 
 }

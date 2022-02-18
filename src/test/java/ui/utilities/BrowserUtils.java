@@ -1,4 +1,4 @@
-package utilities;
+package ui.utilities;
 
 import com.google.common.base.Function;
 import org.junit.Assert;
