@@ -5,3 +5,4 @@ Feature: user should be able to choose a category from ALL menu and see the subc
     Given user goes to amazon page
     Then clicks ALL button
     And randomly choose a category
+    Then sees subcategories

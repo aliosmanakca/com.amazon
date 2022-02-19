@@ -34,10 +34,16 @@ public class StepDef3 {
         WebElement randomCategory = categories.get(index);
         randomCategory.click();
 
+    }
+
+
+    @Then("sees subcategories")
+    public void seesSubcategories() {
         List<WebElement> subCategories = Driver.getDriver().findElements(By.xpath("//ul[@class='hmenu hmenu-visible hmenu-translateX']//a"));
 
         Assert.assertTrue(subCategories.size()>0);
     }
+
 
 
 
