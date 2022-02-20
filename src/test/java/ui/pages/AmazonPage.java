@@ -37,4 +37,7 @@ public class AmazonPage {
     @FindBy(css = "#nav-cart-count-container")
     public WebElement cartButton;
 
+    @FindBy(xpath = "//td[@class='navFooterDescItem']//a")
+    public List<WebElement> linksAtTheBottom;
+
 }

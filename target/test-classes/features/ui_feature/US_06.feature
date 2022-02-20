@@ -1,5 +1,6 @@
 Feature: user should be able to add products to the cart and total price of the cart must be equal to the product prices.
 
+  @TC_0601
   Scenario:
     Given user goes to amazon page
     Then searches a keyword "phone"
