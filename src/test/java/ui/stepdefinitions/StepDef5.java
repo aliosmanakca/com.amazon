@@ -54,8 +54,8 @@ public class StepDef5 {
     public void seesProductsInAscendingOrder() {
         List<String> sortedPricesStr = new ArrayList<>();
 
-        for (int i = 0; i<amazonPage.sortedProducts.size(); i++) {
-            sortedPricesStr.add(amazonPage.sortedProducts.get(i).getText().replaceAll("[^0-9.]",""));
+        for (int i = 0; i<amazonPage.productPrices.size(); i++) {
+            sortedPricesStr.add(amazonPage.productPrices.get(i).getText().replaceAll("[^0-9.]",""));
         }
 
         ListIterator litr = sortedPricesStr.listIterator();
@@ -84,8 +84,8 @@ public class StepDef5 {
     public void seesProductsInDescendingOrder() {
         List<String> sortedPricesStr = new ArrayList<>();
 
-        for (int i = 0; i<amazonPage.sortedProducts.size(); i++) {
-            sortedPricesStr.add(amazonPage.sortedProducts.get(i).getText().replaceAll("[^0-9.]",""));
+        for (int i = 0; i<amazonPage.productPrices.size(); i++) {
+            sortedPricesStr.add(amazonPage.productPrices.get(i).getText().replaceAll("[^0-9.]",""));
         }
 
         ListIterator litr = sortedPricesStr.listIterator();
@@ -110,8 +110,6 @@ public class StepDef5 {
         Assert.assertTrue(descending);
 
     }
-
-
 
 
 

@@ -32,6 +32,9 @@ public class AmazonPage {
     public WebElement sortButton;
 
     @FindBy(xpath = "//div[@class='s-result-item s-asin sg-col-0-of-12 sg-col-16-of-20 sg-col s-widget-spacing-small sg-col-12-of-16']//div[@class='a-section a-spacing-none a-spacing-top-small s-price-instructions-style']//span[@class='a-price']")
-    public List<WebElement> sortedProducts;
+    public List<WebElement> productPrices;
+
+    @FindBy(css = "#nav-cart-count-container")
+    public WebElement cartButton;
 
 }
