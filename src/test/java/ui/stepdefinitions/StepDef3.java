@@ -7,6 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import ui.pages.AmazonPage;
 import ui.utilities.Driver;
+import ui.utilities.Log;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,8 +18,12 @@ public class StepDef3 {
 
     @Then("clicks ALL button")
     public void clicks_ALL_button() {
+        Log.startTestCase("ALL menu test");
+
         amazonPage.allButton.click();
         Driver.getDriver().findElement(By.xpath("(//div[text()='see all'])[1]")).click();
+
+        Log.info("ALL button clicked");
     }
 
     @And("randomly choose a category")
@@ -34,6 +39,7 @@ public class StepDef3 {
         WebElement randomCategory = categories.get(index);
         randomCategory.click();
 
+        Log.info("a category has been selected");
     }
 
 
@@ -42,6 +48,9 @@ public class StepDef3 {
         List<WebElement> subCategories = Driver.getDriver().findElements(By.xpath("//ul[@class='hmenu hmenu-visible hmenu-translateX']//a"));
 
         Assert.assertTrue(subCategories.size()>0);
+
+        Log.info("subcategories have been seen");
+        Log.endTestCase("ALL menu test");
     }
 
 
