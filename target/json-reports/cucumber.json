@@ -1,183 +1,157 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "before": [
-          {
-            "result": {
-              "duration": 483400,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 10,
-        "name": "when the user searches for a keyword, results must contain the keyword",
+        "line": 11,
+        "name": "user shouldn\u0027t be able to login with invalid credentials (Excel attempt)",
         "description": "",
-        "id": "when-the-user-searches-for-a-keyword--results-must-contain-the-keyword;when-the-user-searches-for-a-keyword--results-must-contain-the-keyword;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 300377000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.tearDown(Scenario)"
-            }
-          }
-        ],
+        "id": "user-shouldn-t-be-able-to-login-with-invalid-credentials.-(excel-attempt);user-shouldn-t-be-able-to-login-with-invalid-credentials-(excel-attempt);;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 4879291300,
-              "status": "passed"
+              "status": "undefined"
             },
-            "line": 5,
+            "line": 6,
             "name": "user goes to amazon page",
-            "match": {
-              "location": "StepDef1.user_goes_to_amazon_page()"
-            },
+            "match": {},
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 2417027900,
-              "status": "passed"
+              "status": "undefined"
             },
-            "line": 6,
-            "name": "searches a keyword \"java\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"java\"",
-                  "offset": 19
-                }
-              ],
-              "location": "StepDef4.searchesAKeyword(String)"
-            },
+            "line": 7,
+            "name": "clicks login button",
+            "match": {},
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 767127600,
-              "status": "passed"
+              "status": "undefined"
             },
-            "line": 7,
-            "name": "results contain \"java\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"java\"",
-                  "offset": 16
-                }
-              ],
-              "location": "StepDef4.resultsContain(String)"
-            },
+            "line": 8,
+            "name": "fills the credentials from given \"Sheet1\" and \"1\"",
+            "match": {},
             "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@TC_0401"
+            "name": "@excel"
+          },
+          {
+            "name": "@TC_0201"
           }
         ]
       },
       {
-        "before": [
-          {
-            "result": {
-              "duration": 37200,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 11,
-        "name": "when the user searches for a keyword, results must contain the keyword",
+        "line": 12,
+        "name": "user shouldn\u0027t be able to login with invalid credentials (Excel attempt)",
         "description": "",
-        "id": "when-the-user-searches-for-a-keyword--results-must-contain-the-keyword;when-the-user-searches-for-a-keyword--results-must-contain-the-keyword;;3",
-        "after": [
-          {
-            "result": {
-              "duration": 204369200,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.tearDown(Scenario)"
-            }
-          }
-        ],
+        "id": "user-shouldn-t-be-able-to-login-with-invalid-credentials.-(excel-attempt);user-shouldn-t-be-able-to-login-with-invalid-credentials-(excel-attempt);;3",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 996277100,
-              "status": "passed"
+              "status": "undefined"
             },
-            "line": 5,
+            "line": 6,
             "name": "user goes to amazon page",
-            "match": {
-              "location": "StepDef1.user_goes_to_amazon_page()"
-            },
+            "match": {},
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1431880700,
-              "status": "passed"
+              "status": "undefined"
             },
-            "line": 6,
-            "name": "searches a keyword \"apple\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"apple\"",
-                  "offset": 19
-                }
-              ],
-              "location": "StepDef4.searchesAKeyword(String)"
-            },
+            "line": 7,
+            "name": "clicks login button",
+            "match": {},
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 344801700,
-              "status": "passed"
+              "status": "undefined"
             },
-            "line": 7,
-            "name": "results contain \"apple\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"apple\"",
-                  "offset": 16
-                }
-              ],
-              "location": "StepDef4.resultsContain(String)"
-            },
+            "line": 8,
+            "name": "fills the credentials from given \"Sheet1\" and \"2\"",
+            "match": {},
             "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@TC_0401"
+            "name": "@excel"
+          },
+          {
+            "name": "@TC_0201"
+          }
+        ]
+      },
+      {
+        "line": 13,
+        "name": "user shouldn\u0027t be able to login with invalid credentials (Excel attempt)",
+        "description": "",
+        "id": "user-shouldn-t-be-able-to-login-with-invalid-credentials.-(excel-attempt);user-shouldn-t-be-able-to-login-with-invalid-credentials-(excel-attempt);;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "user goes to amazon page",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "clicks login button",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "fills the credentials from given \"Sheet1\" and \"3\"",
+            "match": {},
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@excel"
+          },
+          {
+            "name": "@TC_0201"
           }
         ]
       }
     ],
-    "name": "when the user searches for a keyword, results must contain the keyword",
+    "name": "user shouldn\u0027t be able to login with invalid credentials. (Excel attempt)",
     "description": "",
-    "id": "when-the-user-searches-for-a-keyword--results-must-contain-the-keyword",
+    "id": "user-shouldn-t-be-able-to-login-with-invalid-credentials.-(excel-attempt)",
     "keyword": "Feature",
-    "uri": "src\\test\\resources\\features\\US_04.feature",
-    "tags": []
+    "uri": "src\\test\\resources\\features\\ui_feature\\ExcelTesting.feature",
+    "tags": [
+      {
+        "name": "@excel",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   }
 ]

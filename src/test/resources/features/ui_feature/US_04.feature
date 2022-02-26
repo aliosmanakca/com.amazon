@@ -7,5 +7,5 @@ Feature: when the user searches for a keyword, results must contain the keyword
     And results contain "<keyword>"
     Examples:
       | keyword |
-    |   java      |
-    |   apple     |
+      | java    |
+      | apple   |

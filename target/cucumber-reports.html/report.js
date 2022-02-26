@@ -1,16 +1,21 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src\\test\\resources\\features\\US_04.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src\\test\\resources\\features\\ui_feature\\ExcelTesting.feature");
 formatter.feature({
-  "name": "when the user searches for a keyword, results must contain the keyword",
+  "name": "user shouldn\u0027t be able to login with invalid credentials. (Excel attempt)",
   "description": "",
-  "keyword": "Feature"
+  "keyword": "Feature",
+  "tags": [
+    {
+      "name": "@excel"
+    }
+  ]
 });
 formatter.scenarioOutline({
-  "name": "when the user searches for a keyword, results must contain the keyword",
+  "name": "user shouldn\u0027t be able to login with invalid credentials (Excel attempt)",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@TC_0401"
+      "name": "@TC_0201"
     }
   ]
 });
@@ -19,11 +24,11 @@ formatter.step({
   "keyword": "Given "
 });
 formatter.step({
-  "name": "searches a keyword \"\u003ckeyword\u003e\"",
+  "name": "clicks login button",
   "keyword": "Then "
 });
 formatter.step({
-  "name": "results contain \"\u003ckeyword\u003e\"",
+  "name": "fills the credentials from given \"\u003csheetname\u003e\" and \"\u003crownumber\u003e\"",
   "keyword": "And "
 });
 formatter.examples({
@@ -33,111 +38,143 @@ formatter.examples({
   "rows": [
     {
       "cells": [
-        "keyword"
+        "sheetname",
+        "",
+        "rownumber"
       ]
     },
     {
       "cells": [
-        "java"
+        "Sheet1",
+        "",
+        "1"
       ]
     },
     {
       "cells": [
-        "apple"
+        "Sheet1",
+        "",
+        "2"
+      ]
+    },
+    {
+      "cells": [
+        "Sheet1",
+        "",
+        "3"
       ]
     }
   ]
 });
 formatter.scenario({
-  "name": "when the user searches for a keyword, results must contain the keyword",
+  "name": "user shouldn\u0027t be able to login with invalid credentials (Excel attempt)",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@TC_0401"
+      "name": "@excel"
+    },
+    {
+      "name": "@TC_0201"
     }
   ]
-});
-formatter.before({
-  "status": "passed"
 });
 formatter.step({
   "name": "user goes to amazon page",
   "keyword": "Given "
 });
-formatter.match({
-  "location": "StepDef1.user_goes_to_amazon_page()"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.step({
-  "name": "searches a keyword \"java\"",
+  "name": "clicks login button",
   "keyword": "Then "
 });
-formatter.match({
-  "location": "StepDef4.searchesAKeyword(String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.step({
-  "name": "results contain \"java\"",
+  "name": "fills the credentials from given \"Sheet1\" and \"1\"",
   "keyword": "And "
 });
-formatter.match({
-  "location": "StepDef4.resultsContain(String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.scenario({
-  "name": "when the user searches for a keyword, results must contain the keyword",
+  "name": "user shouldn\u0027t be able to login with invalid credentials (Excel attempt)",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@TC_0401"
+      "name": "@excel"
+    },
+    {
+      "name": "@TC_0201"
     }
   ]
-});
-formatter.before({
-  "status": "passed"
 });
 formatter.step({
   "name": "user goes to amazon page",
   "keyword": "Given "
 });
-formatter.match({
-  "location": "StepDef1.user_goes_to_amazon_page()"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.step({
-  "name": "searches a keyword \"apple\"",
+  "name": "clicks login button",
   "keyword": "Then "
 });
-formatter.match({
-  "location": "StepDef4.searchesAKeyword(String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.step({
-  "name": "results contain \"apple\"",
+  "name": "fills the credentials from given \"Sheet1\" and \"2\"",
   "keyword": "And "
 });
-formatter.match({
-  "location": "StepDef4.resultsContain(String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
-formatter.after({
-  "status": "passed"
+formatter.scenario({
+  "name": "user shouldn\u0027t be able to login with invalid credentials (Excel attempt)",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@excel"
+    },
+    {
+      "name": "@TC_0201"
+    }
+  ]
+});
+formatter.step({
+  "name": "user goes to amazon page",
+  "keyword": "Given "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "clicks login button",
+  "keyword": "Then "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "fills the credentials from given \"Sheet1\" and \"3\"",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
 });
 });

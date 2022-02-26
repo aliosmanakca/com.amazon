@@ -6,7 +6,7 @@ Feature: user shouldn't be able to login with invalid credentials
     Then clicks login button
     And enters "<username>" for username and "<password>" for password
     Examples:
-      | username |   | password |
-      |   asd@gmail.com  |   |    wrongpassword123      |
-      |   wrong@gmail.com|   |    correctpassword123    |
-      |   wrong@gmail.com|   |    wrongpassword123      |
+      | username        |  | password           |
+      | asd@gmail.com   |  | wrongpassword123   |
+      | wrong@gmail.com |  | correctpassword123 |
+      | wrong@gmail.com |  | wrongpassword123   |

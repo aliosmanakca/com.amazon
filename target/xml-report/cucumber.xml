@@ -1,19 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="11.343799">
-    <testcase classname="when the user searches for a keyword, results must contain the keyword" name="when the user searches for a keyword, results must contain the keyword" time="8.366079">
-        <system-out>
-            <![CDATA[Given user goes to amazon page..............................................passed
-Then searches a keyword "java"..............................................passed
-And results contain "java"..................................................passed
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="3" tests="3" time="0.002949">
+    <testcase classname="user shouldn't be able to login with invalid credentials. (Excel attempt)" name="user shouldn't be able to login with invalid credentials (Excel attempt)" time="0.002132">
+        <skipped>
+            <![CDATA[Given user goes to amazon page..............................................undefined
+Then clicks login button....................................................undefined
+And fills the credentials from given "Sheet1" and "1".......................undefined
 ]]>
-        </system-out>
+        </skipped>
     </testcase>
-    <testcase classname="when the user searches for a keyword, results must contain the keyword" name="when the user searches for a keyword, results must contain the keyword 2" time="2.97772">
-        <system-out>
-            <![CDATA[Given user goes to amazon page..............................................passed
-Then searches a keyword "apple".............................................passed
-And results contain "apple".................................................passed
+    <testcase classname="user shouldn't be able to login with invalid credentials. (Excel attempt)" name="user shouldn't be able to login with invalid credentials (Excel attempt) 2" time="0.00044">
+        <skipped>
+            <![CDATA[Given user goes to amazon page..............................................undefined
+Then clicks login button....................................................undefined
+And fills the credentials from given "Sheet1" and "2".......................undefined
 ]]>
-        </system-out>
+        </skipped>
+    </testcase>
+    <testcase classname="user shouldn't be able to login with invalid credentials. (Excel attempt)" name="user shouldn't be able to login with invalid credentials (Excel attempt) 3" time="0.000377">
+        <skipped>
+            <![CDATA[Given user goes to amazon page..............................................undefined
+Then clicks login button....................................................undefined
+And fills the credentials from given "Sheet1" and "3".......................undefined
+]]>
+        </skipped>
     </testcase>
 </testsuite>

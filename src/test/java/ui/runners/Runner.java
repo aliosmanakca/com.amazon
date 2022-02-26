@@ -1,6 +1,5 @@
 package ui.runners;
 
-
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 import org.junit.runner.RunWith;
@@ -12,7 +11,7 @@ import org.junit.runner.RunWith;
                 "junit:target/xml-report/cucumber.xml"},
         features = "src/test/resources/features/ui_feature",
         glue = "src/test/java/ui/stepdefinitions",
-        tags = "@TC_0401",
+        tags = "@excel",
         dryRun = false
 )
 
