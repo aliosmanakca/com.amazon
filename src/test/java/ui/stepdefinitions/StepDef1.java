@@ -39,14 +39,14 @@ public class StepDef1 {
         options.addArguments("disable-gpu");
         driver = new ChromeDriver(options);
 
-        driver.get(ConfigurationReader.getProperty("url"));
-
-        System.out.println("jenkins worked");
+        driver.get("https://www.amazon.com/");
 
         String expectedurl = "amazon";
         String actualurl = driver.getCurrentUrl();
 
         Assert.assertTrue(actualurl.contains(expectedurl));
+
+        System.out.println("jenkins worked");
 
     }
 }
