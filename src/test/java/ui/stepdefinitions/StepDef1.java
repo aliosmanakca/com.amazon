@@ -1,6 +1,7 @@
 package ui.stepdefinitions;
 
-import cucumber.api.java.en.Given;
+
+import io.cucumber.java.en.Given;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.junit.Assert;

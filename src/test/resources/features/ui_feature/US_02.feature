@@ -1,6 +1,6 @@
 Feature: user shouldn't be able to login with invalid credentials
 
-  @TC_0201
+  @TC_0201 @smoke
   Scenario Outline: user shouldn't be able to login with invalid credentials
     Given user goes to amazon page
     Then clicks login button

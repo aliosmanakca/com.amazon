@@ -21,3 +21,28 @@
 2022-02-26 14:46:06 INFO  StepDef1:23 - main page is opened
 2022-02-26 14:46:10 INFO  StepDef1:23 - main page is opened
 2022-02-26 14:46:13 INFO  StepDef1:23 - main page is opened
+2022-03-02 10:54:01 INFO  StepDef1:23 - main page is opened
+2022-03-02 11:15:10 INFO  StepDef1:23 - main page is opened
+2022-03-02 11:25:11 INFO  StepDef1:23 - main page is opened
+2022-03-02 11:37:40 INFO  StepDef1:24 - main page is opened
+2022-03-02 11:37:40 INFO  Log:13 - ---------------------------------------------------------------------------------------
+2022-03-02 11:37:40 INFO  Log:14 - ***********************        ALL menu test START    **************************
+2022-03-02 11:37:40 INFO  Log:15 - ---------------------------------------------------------------------------------------
+2022-03-02 11:37:40 INFO  Log:30 - ALL button clicked
+2022-03-02 11:37:41 INFO  Log:30 - a category has been selected
+2022-03-02 11:37:42 INFO  Log:30 - subcategories have been seen
+2022-03-02 11:37:42 INFO  Log:21 - ---------------------------------------------------------------------------------------
+2022-03-02 11:37:42 INFO  Log:22 - **************************        ALL menu test END    **************************
+2022-03-02 11:37:42 INFO  Log:23 - ---------------------------------------------------------------------------------------
+2022-03-02 11:38:47 INFO  StepDef1:24 - main page is opened
+2022-03-02 11:38:48 INFO  StepDef1:24 - main page is opened
+2022-03-02 11:38:53 INFO  StepDef1:24 - main page is opened
+2022-03-02 11:38:56 INFO  StepDef1:24 - main page is opened
+2022-03-02 11:42:08 INFO  StepDef1:24 - main page is opened
+2022-03-02 11:42:09 INFO  StepDef1:24 - main page is opened
+2022-03-02 11:42:14 INFO  StepDef1:24 - main page is opened
+2022-03-02 11:42:17 INFO  StepDef1:24 - main page is opened
+2022-03-02 11:49:20 INFO  StepDef1:24 - main page is opened
+2022-03-02 11:49:22 INFO  StepDef1:24 - main page is opened
+2022-03-02 11:49:26 INFO  StepDef1:24 - main page is opened
+2022-03-02 11:49:29 INFO  StepDef1:24 - main page is opened
