@@ -1,32 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="15.356">
-    <testcase classname="User must be able to access amazon.com page" name="User must be able to access amazon.com page" time="4.193">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="5.544">
+    <testcase classname="jenkins testing" name="Jenkins testing" time="5.385">
         <system-out>
-            <![CDATA[Given user goes to amazon page..............................................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="user shouldn't be able to login with invalid credentials" name="user shouldn't be able to login with invalid credentials" time="4.675">
-        <system-out>
-            <![CDATA[Given user goes to amazon page..............................................passed
-Then clicks login button....................................................passed
-And enters "asd@gmail.com" for username and "wrongpassword123" for password.passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="user shouldn't be able to login with invalid credentials" name="user shouldn't be able to login with invalid credentials 2" time="3.333">
-        <system-out>
-            <![CDATA[Given user goes to amazon page..............................................passed
-Then clicks login button....................................................passed
-And enters "wrong@gmail.com" for username and "correctpassword123" for password.passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="user shouldn't be able to login with invalid credentials" name="user shouldn't be able to login with invalid credentials 3" time="2.983">
-        <system-out>
-            <![CDATA[Given user goes to amazon page..............................................passed
-Then clicks login button....................................................passed
-And enters "wrong@gmail.com" for username and "wrongpassword123" for password.passed
+            <![CDATA[Given user goes to amazon page jenkins......................................passed
 ]]>
         </system-out>
     </testcase>

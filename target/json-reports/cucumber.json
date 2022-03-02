@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2022-03-02T16:49:16.755Z",
+        "start_timestamp": "2022-03-02T20:40:05.888Z",
         "before": [
           {
             "result": {
-              "duration": 999600,
+              "duration": 1436300,
               "status": "passed"
             },
             "match": {
@@ -16,13 +16,13 @@
           }
         ],
         "line": 4,
-        "name": "User must be able to access amazon.com page",
+        "name": "Jenkins testing",
         "description": "",
-        "id": "user-must-be-able-to-access-amazon.com-page;user-must-be-able-to-access-amazon.com-page",
+        "id": "jenkins-testing;jenkins-testing",
         "after": [
           {
             "result": {
-              "duration": 415188600,
+              "duration": 143255000,
               "status": "passed"
             },
             "match": {
@@ -35,302 +35,29 @@
         "steps": [
           {
             "result": {
-              "duration": 3727396700,
+              "duration": 5198877700,
               "status": "passed"
             },
             "line": 5,
-            "name": "user goes to amazon page",
+            "name": "user goes to amazon page jenkins",
             "match": {
-              "location": "ui.stepdefinitions.StepDef1.user_goes_to_amazon_page()"
+              "location": "ui.stepdefinitions.StepDef1.userGoesToAmazonPageJenkins()"
             },
             "keyword": "Given "
           }
         ],
         "tags": [
           {
-            "name": "@TC_0101"
-          },
-          {
-            "name": "@smoke"
+            "name": "@jenkins"
           }
         ]
       }
     ],
-    "name": "User must be able to access amazon.com page",
+    "name": "jenkins testing",
     "description": "",
-    "id": "user-must-be-able-to-access-amazon.com-page",
+    "id": "jenkins-testing",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/ui_feature/US_01.feature",
-    "tags": []
-  },
-  {
-    "line": 1,
-    "elements": [
-      {
-        "start_timestamp": "2022-03-02T16:49:20.973Z",
-        "before": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "ui.stepdefinitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 10,
-        "name": "user shouldn\u0027t be able to login with invalid credentials",
-        "description": "",
-        "id": "user-shouldn-t-be-able-to-login-with-invalid-credentials;user-shouldn-t-be-able-to-login-with-invalid-credentials;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 191947500,
-              "status": "passed"
-            },
-            "match": {
-              "location": "ui.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 1415499300,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user goes to amazon page",
-            "match": {
-              "location": "ui.stepdefinitions.StepDef1.user_goes_to_amazon_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 524590300,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "clicks login button",
-            "match": {
-              "location": "ui.stepdefinitions.StepDef2.clicksLoginButton()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 2536572100,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "enters \"asd@gmail.com\" for username and \"wrongpassword123\" for password",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"asd@gmail.com\"",
-                  "offset": 7
-                },
-                {
-                  "val": "\"wrongpassword123\"",
-                  "offset": 40
-                }
-              ],
-              "location": "ui.stepdefinitions.StepDef2.entersForUsernameAndForPassword(java.lang.String,java.lang.String)"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@TC_0201"
-          },
-          {
-            "name": "@smoke"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-03-02T16:49:25.656Z",
-        "before": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "ui.stepdefinitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 11,
-        "name": "user shouldn\u0027t be able to login with invalid credentials",
-        "description": "",
-        "id": "user-shouldn-t-be-able-to-login-with-invalid-credentials;user-shouldn-t-be-able-to-login-with-invalid-credentials;;3",
-        "after": [
-          {
-            "result": {
-              "duration": 194077800,
-              "status": "passed"
-            },
-            "match": {
-              "location": "ui.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 1096606200,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user goes to amazon page",
-            "match": {
-              "location": "ui.stepdefinitions.StepDef1.user_goes_to_amazon_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 355481500,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "clicks login button",
-            "match": {
-              "location": "ui.stepdefinitions.StepDef2.clicksLoginButton()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1684820700,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "enters \"wrong@gmail.com\" for username and \"correctpassword123\" for password",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"wrong@gmail.com\"",
-                  "offset": 7
-                },
-                {
-                  "val": "\"correctpassword123\"",
-                  "offset": 42
-                }
-              ],
-              "location": "ui.stepdefinitions.StepDef2.entersForUsernameAndForPassword(java.lang.String,java.lang.String)"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@TC_0201"
-          },
-          {
-            "name": "@smoke"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-03-02T16:49:28.992Z",
-        "before": [
-          {
-            "result": {
-              "duration": 1005300,
-              "status": "passed"
-            },
-            "match": {
-              "location": "ui.stepdefinitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 12,
-        "name": "user shouldn\u0027t be able to login with invalid credentials",
-        "description": "",
-        "id": "user-shouldn-t-be-able-to-login-with-invalid-credentials;user-shouldn-t-be-able-to-login-with-invalid-credentials;;4",
-        "after": [
-          {
-            "result": {
-              "duration": 209994900,
-              "status": "passed"
-            },
-            "match": {
-              "location": "ui.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 847363700,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user goes to amazon page",
-            "match": {
-              "location": "ui.stepdefinitions.StepDef1.user_goes_to_amazon_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 350110900,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "clicks login button",
-            "match": {
-              "location": "ui.stepdefinitions.StepDef2.clicksLoginButton()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1572186100,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "enters \"wrong@gmail.com\" for username and \"wrongpassword123\" for password",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"wrong@gmail.com\"",
-                  "offset": 7
-                },
-                {
-                  "val": "\"wrongpassword123\"",
-                  "offset": 42
-                }
-              ],
-              "location": "ui.stepdefinitions.StepDef2.entersForUsernameAndForPassword(java.lang.String,java.lang.String)"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@TC_0201"
-          },
-          {
-            "name": "@smoke"
-          }
-        ]
-      }
-    ],
-    "name": "user shouldn\u0027t be able to login with invalid credentials",
-    "description": "",
-    "id": "user-shouldn-t-be-able-to-login-with-invalid-credentials",
-    "keyword": "Feature",
-    "uri": "file:src/test/resources/features/ui_feature/US_02.feature",
+    "uri": "file:src/test/resources/features/ui_feature/Jenkins.feature",
     "tags": []
   }
 ]

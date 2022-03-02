@@ -2,9 +2,13 @@ package ui.stepdefinitions;
 
 
 import io.cucumber.java.en.Given;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import ui.pages.AmazonPage;
 import ui.utilities.ConfigurationReader;
 import ui.utilities.Driver;
@@ -26,4 +30,23 @@ public class StepDef1 {
     }
 
 
+    @Given("user goes to amazon page jenkins")
+    public void userGoesToAmazonPageJenkins() {
+        WebDriver driver;
+        WebDriverManager.chromedriver().setup();
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("headless");
+        options.addArguments("disable-gpu");
+        driver = new ChromeDriver(options);
+
+        driver.get(ConfigurationReader.getProperty("url"));
+
+        System.out.println("jenkins worked");
+
+        String expectedurl = "amazon";
+        String actualurl = driver.getCurrentUrl();
+
+        Assert.assertTrue(actualurl.contains(expectedurl));
+
+    }
 }

@@ -46,3 +46,6 @@
 2022-03-02 11:49:22 INFO  StepDef1:24 - main page is opened
 2022-03-02 11:49:26 INFO  StepDef1:24 - main page is opened
 2022-03-02 11:49:29 INFO  StepDef1:24 - main page is opened
+2022-03-02 15:37:14 INFO  StepDef1:28 - main page is opened
+2022-03-02 15:37:19 INFO  StepDef1:28 - main page is opened
+2022-03-02 15:37:23 INFO  StepDef1:28 - main page is opened
