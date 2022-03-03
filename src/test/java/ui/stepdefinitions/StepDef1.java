@@ -32,6 +32,9 @@ public class StepDef1 {
 
     @Given("user goes to amazon page jenkins")
     public void userGoesToAmazonPageJenkins() {
+
+        // deactivate hooks class and try again
+
         WebDriver driver;
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
