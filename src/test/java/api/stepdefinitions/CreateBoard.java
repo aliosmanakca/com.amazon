@@ -1,6 +1,5 @@
 package api.stepdefinitions;
 
-import com.sun.tools.jxc.ConfigReader;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.restassured.path.json.JsonPath;
@@ -12,7 +11,7 @@ import java.util.HashMap;
 
 import static io.restassured.RestAssured.given;
 
-public class ApiStepDef extends TestBaseApi {
+public class CreateBoard extends TestBaseApi {
 
     Response response;
     JsonPath jsonPath;
@@ -21,12 +20,12 @@ public class ApiStepDef extends TestBaseApi {
     public void send_request_to_create_board(String boardName) {
 
         //define url
-        //expected data-request data
+        //generate expected data-request data
         //send request and get the response
         //assert
 
         setUp();
-        spec.pathParams("parametre1",1,"parametre2","boards");
+        spec.pathParams("parameter1",1,"parameter2","boards");
 
         HashMap<String,String> requestBody=new HashMap<>();
         requestBody.put("name",boardName);
@@ -40,9 +39,10 @@ public class ApiStepDef extends TestBaseApi {
                 contentType("application/json").
                 body(requestBody).
                 when().
-                post("/{parametre1}/{parametre2}");
+                post("/{parameter1}/{parameter2}");
 
         response.prettyPrint();
+
         jsonPath = response.jsonPath();
 
     }
@@ -60,7 +60,6 @@ public class ApiStepDef extends TestBaseApi {
         Assert.assertEquals(boardName,jsonPath.getString("name"));
 
     }
-
 
 
 
