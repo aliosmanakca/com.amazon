@@ -7,10 +7,7 @@ import io.restassured.response.Response;
 import org.junit.Assert;
 import ui.utilities.ConfigurationReader;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.HashMap;
 import java.util.Scanner;
 
@@ -19,6 +16,7 @@ import static io.restassured.RestAssured.given;
 public class CreateListStepDef extends TestBaseApi{
 
     Response response;
+    JsonPath jsonPath;
 
     @Given("send request to create {string} list in {string} board")
     public void sendRequestToCreateListInBoard(String listName, String boardName) throws IOException {
@@ -51,9 +49,15 @@ public class CreateListStepDef extends TestBaseApi{
                 spec(spec).
                 body(requestMap).
                 when().
-                post("{param1}/{param2}");
+                post("/{param1}/{param2}");
 
         response.prettyPrint();
+
+        jsonPath = response.jsonPath();
+
+        FileWriter writer = new FileWriter("src/test/resources/test_data/ApiListId.txt",true);
+        writer.write(listName + " , " + jsonPath.get("id") + "\n");
+        writer.close();
 
     }
 
@@ -63,8 +67,6 @@ public class CreateListStepDef extends TestBaseApi{
     public void verifyListNameIs(String listName) {
 
         Assert.assertEquals(200 , response.statusCode());
-
-        JsonPath jsonPath = response.jsonPath();
 
         Assert.assertEquals(listName , jsonPath.getString("name"));
     }

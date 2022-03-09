@@ -8,9 +8,9 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
         plugin = {"pretty", "html:Reports/htmlReport.html",
                 "json:Reports/jsonReport.json"},
-        features="src/test/resources/api_feature",
+        features="src/test/resources/features/api_feature",
         glue="api/stepdefinitions",
-        tags="@api",
+        tags="@updateList",
         //dryRun=false,
         publish=true
 )

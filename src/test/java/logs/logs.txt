@@ -49,3 +49,4 @@
 2022-03-02 15:37:14 INFO  StepDef1:28 - main page is opened
 2022-03-02 15:37:19 INFO  StepDef1:28 - main page is opened
 2022-03-02 15:37:23 INFO  StepDef1:28 - main page is opened
+2022-03-09 14:41:42 INFO  StepDef1:28 - main page is opened
