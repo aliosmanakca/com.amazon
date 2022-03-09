@@ -7,6 +7,8 @@ import io.restassured.response.Response;
 import org.junit.Assert;
 import ui.utilities.ConfigurationReader;
 
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.HashMap;
 
 import static io.restassured.RestAssured.given;
@@ -17,7 +19,7 @@ public class CreateBoard extends TestBaseApi {
     JsonPath jsonPath;
 
     @Given("send request to create {string} board")
-    public void send_request_to_create_board(String boardName) {
+    public void send_request_to_create_board(String boardName) throws IOException {
 
         //define url
         //generate expected data-request data
@@ -44,6 +46,11 @@ public class CreateBoard extends TestBaseApi {
         response.prettyPrint();
 
         jsonPath = response.jsonPath();
+
+        FileWriter writer = new FileWriter("src/test/resources/test_data/ApiBoardId.txt",true);
+        writer.write(boardName + " , " + jsonPath.get("id") + "\n");
+        writer.close();
+
 
     }
 

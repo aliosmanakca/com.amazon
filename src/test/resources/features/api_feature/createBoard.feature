@@ -1,6 +1,6 @@
-Feature: trello testi
+Feature: trello test
 
   Scenario: create a board
-    Given send request to create "automationTest1" board
+    Given send request to create "automationTest7" board
     Then assert status code 200
-    And assert board name is "automationTest1"
+    And assert board name is "automationTest7"

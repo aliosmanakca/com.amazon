@@ -9,6 +9,9 @@ import io.restassured.response.Response;
 import org.junit.Assert;
 import ui.utilities.ConfigurationReader;
 
+import java.io.FileWriter;
+import java.io.IOException;
+
 import static io.restassured.RestAssured.given;
 
 
@@ -18,7 +21,7 @@ public class CreateBoardWithPojo extends TestBaseApi{
     ResponsePojo resPojo;
 
     @Given("send request to create {string} board with pojo")
-    public void sendRequestToCreateBoardWithPojo(String boardName) {
+    public void sendRequestToCreateBoardWithPojo(String boardName) throws IOException {
         setUp();
         spec.pathParams("param1",1, "param2","boards");
 
@@ -32,12 +35,20 @@ public class CreateBoardWithPojo extends TestBaseApi{
                 post("/{param1}/{param2}");
 
         response.prettyPrint();
+
+        resPojo = response.as(ResponsePojo.class); // DeSerialization process --> Json to Java
+
+        FileWriter writer = new FileWriter("src/test/resources/test_data/ApiBoardId.txt",true);
+        writer.write("\n"+ boardName + " , " + resPojo.getId());
+        writer.close();
+
     }
 
     @Then("get response with pojo")
     public void getResponseWithPojo() {
 
-        resPojo = response.as(ResponsePojo.class); // DeSerialization process --> Json to Java
+       // resPojo = response.as(ResponsePojo.class); // DeSerialization process --> Json to Java
+        // I did this process above
 
     }
 
